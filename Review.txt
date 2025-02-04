@@ -1,0 +1,69 @@
+	Discussing with execution & other team to understand the requirement fully.
+	Deriving the automation flow from the requirements.
+	Discussing with various tools team to freeze the flow by clarifying all their queries.  Modification of existing automation flow based on the change in requirement.
+	Taking end to end ownership until closure.
+	Verification & enablement of the automation flows for different programs.
+	Get recovery script requirements from WBT IN/USA teams and implement the same.
+	Anticipate risk on deliverables and pro-actively communicate along with mitigation plan.
+
+Discussed with execution team and other team members to understand the different automation flows and execution pain points to provide it as requirement.
+Modified the flows of nightly/weekly automation, issue reproduction, QA automation, FD validation & smoke testing automation based on requirement gathered from execution team.  Highlighted the manual & automation sections in the given automation flows for better understanding and updated the wiki with tools team queries.
+DevOps - Process change in firmware update (weekly run) and JSON config movement have been identified and deployed successfully.  Driving requirements like single GK run for multiple PRs and sustenance sanity runs to bring to closure.
+Verified the complete End to End nightly/weekly automation flow and supported for deployement.  Identified critical issues like ML not considering Jira with one failure count, FAR not considering manually created Jira and ML traiging the failure which was already auto triaged.
+Development of Agent Smith dev prep script from scratch and successfully integrated with pre-production script.  Driving all the automation feature enablement with multiple programs to closure.
+Discussed with BLR & US team to identify recovery script changes and implemented.
+
+
+	E2E traceability - Discuss with eSSD managers and align them on short term and long term goal.  Work with tools team to close on derived requirement.
+	Gate Keeper - Monitoring gate keeper executions continuously and bringing up the environment when there is failure observed due to stations.
+	Gate Keeper - Discuss on gate keeper execution change on different forums and bring all the requirements to closure.
+	Validating the tools requirements raised across WBT IN/USA and raising tools Jira with right business ranking after internal discussion.
+	Support any tools issue raised from WBT USA team after discussing with concern tools team.
+	Write UAT test plan document for System Releases and review with BL & QA teams.  Drive UAT test plan execution (execution of test cases and closing Jira).
+	Help team members when required and also support the team when there is absence of team members.
+	Anticipate risk on deliverables and pro-actively communicate along with mitigation plan.
+
+Discussed regarding End to End requirement traceability short term goal with WBT & FWQA managers and provided short term dashboard requirements to tools team.  Working with tools team to understand on Kiosk requirements and how it is going to impact WBT process flow.
+Continously monitored gatekeeper and sanity runs and worked with DevOps team for fixing the issue immediately.
+By discussing with various forums, multiple changes have been identified to improve the gatekeeper process and deploying them phase by phase.
+Involved in setting business ranking for tools requirements raised by WBT BLR & US team based on ROI.
+Immediate support has been provided to WBT US team on their queries/issues on tools.  Supported team on getting password changed on all STAR machines by communicating with various tools teams.
+Written/Reviewed the UAT test plans of SR3.3-SR3.6 and supported peers in understanding the requirements and testing methods.
+
+
+
+	100% Development of test cases after understanding the requirements.
+	100% Deployment of developed test cases.
+	Support FD Jira from nightly regression on timely basis.
+
+Worked on developing SGL scripts from scratch after understanding the spec details.
+Working on deploying SGL scripts on BBC programs since we are hitting multiple CVF related issues while deploying through STAR.
+Fixed multiple framework related and test case related (FD) issues coming up from different modules.
+
+
+
+	Develop technical and domain knowledge with self-learning and from tech talks.
+	Understand the overall architecture and work flow of internal frameworks (UTF and CVF).
+	Contribute in Failure Demand Jira if required.(bug fixes/enhancements of test cases)
+
+
+
+	Quick and timely response to all email messages and Jiras.
+	Be proactive in communication to make sure given tasks are completed in time.
+
+Worked internally & responded quickly on all the queries came from US WBT & tools team.
+Having discussions with internal team members on closing missed out automation feature implementation on all sustenance/NPI programs.
+Having discussions with tools (STAR/FAR/Datalens/DevOps) team to make sure progression on WBT requirements.
+
+
+
+	Understanding 2-3 NVMe features.
+	Finding test gaps in the existing test plan.
+	Write test cases and closing issues upon arrival.
+	Provide training to the team.
+	Participating in review and providing suggestions.
+	Supporting team upon getting issues on these features.
+
+Training sessions have been carried out for various team members on enabling one launch, gatekeeper, sanity and E2E nightly runs.
+Participated in automation framework/test case code reviews and provided valid comments to improve code quality.
+Provided support for enabling E2E automation on BBC/BBZ programs, also supported peers on fixing gatekeeper/sanity issues.

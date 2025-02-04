@@ -1,0 +1,48 @@
+CHRISTINA
+Contributions:
+Ramped up very quick to play Vivaldi integration lead role.
+Supported on execution activities for lab issues and rerun during peak times of program
+Independently takes care of all Integration activity (Example: preparing test plan, preparing and sending regression reports to stakeholders)
+Takes complete ownership of Jira closure, test deployment tracking and first/second FA closure.
+Stretched herself and supported 2 programs integration activities in parallel on demand
+Attends inbound meetings & tools meetings.
+Created script for FVT package creation.
+Improvement Areas:
+Need to work on articulation skills as sometime this leads to conflicts with execution team. 
+
+MS:
+Have taken ownership on playing role of SOS for sometime for Atlas3 and also playing Maia2 base integration lead role.
+She takes ownership, strong debug capabilities, accounability and have decision making capabilities to play the next role.
+Trained many new joinees for execution and integration activity.
+As an IC, she had taken care many test development activities from FPGA, FE and FTL modules from enterprise products.
+Had worked on initiavite of Qvisor from FVT.
+
+JOY:
+Contributions:
+Have played role of Single FVT POC in past for any T&I and automation initiatives.
+Have worked with T&I and enabled HW issue reproduction automation initiatives in ESS programs.  Also worked on creating the workflow for dynamic pooling initiative.
+Have contributed on recovery script in execution flow as part of both enterprise and client products.
+Playing integration lead role for A3B6 base and shows accounability in Jira closure, execution completion & first/second FA completion.
+Improvement Areas:
+Apart from closing assigned activities, need to work on improvising tools, automation initiatives and deployments.
+
+YAMINI:
+Contributions:
+Worked in PS modules to understand the features and bug fixing.
+Started working as part of integration team from Mar 2024 and ramped up quite well to take care Maia2 Base/256GB NST.
+Also taking care of 256GB qual run and ensuring all reruns for lab issues & test issues.
+Improvement Areas:
+Worked on FTL from June to Sep 2023 with less contribution
+Worked on PS from Oct to Feb 2024 with less contribution
+
+PRAKASH:
+Contributions:
+Have done good job in enabling one launch in A3B6 with one test plan.
+Worked as execution member during resource crunch.
+Have good understanding about setup related issues and guides the team when needed the most.
+Worked on explorer issue and helped team to successfully trigger the run.
+Improvement Areas:
+Should start working on resolving setup issues and enabling automation features across programs.
+
+Common points:
+Backup resource when team is unavailable
