@@ -1,0 +1,56 @@
+name: Jira Status Check
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  check-jira-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Get Jira Issue Key from PR Description
+        id: jira_key
+        run: |
+          echo "PR description:"
+          echo "${{ github.event.pull_request.body }}"
+          JIRA_KEY=$(echo "${{ github.event.pull_request.body }}" | grep -oE '[A-Z]+-[0-9]+' | head -n 1)
+          echo "JIRA_KEY=$JIRA_KEY" >> $GITHUB_ENV
+          echo "JIRA issue key found: $JIRA_KEY"
+        
+      - name: Get Jira Issue Status
+        id: jira_status
+        run: |
+          if [ -z "${{ env.JIRA_KEY }}" ]; then
+            echo "No Jira key found in PR description"
+            exit 1
+          fi
+          echo "Fetching Jira issue status for ${{ env.JIRA_KEY }}"
+
+          curl -s -u ${{ secrets.JIRA_USERNAME }}:${{ secrets.JIRA_API_TOKEN }} \
+               -X GET \
+               -H "Content-Type: application/json" \
+               "https://${{ secrets.JIRA_DOMAIN }}/rest/api/3/issue/${{ env.JIRA_KEY }}" \
+               | jq -r '.fields.status.name' > status.txt
+          
+          ISSUE_STATUS=$(cat status.txt)
+          echo "Jira issue status: $ISSUE_STATUS"
+          
+          if [[ "$ISSUE_STATUS" == "Done" || "$ISSUE_STATUS" == "Resolved" ]]; then
+            echo "Jira issue is ready for review, proceeding with PR."
+          else
+            echo "Jira issue status is not ready for review. Current status: $ISSUE_STATUS"
+            exit 1
+          fi
+
+      - name: Check Jira Issue Status
+        run: |
+          ISSUE_STATUS=$(cat status.txt)
+          if [[ "$ISSUE_STATUS" == "Done" || "$ISSUE_STATUS" == "Resolved" ]]; then
+            echo "Jira issue is resolved. PR can be merged."
+          else
+            echo "Jira issue is not resolved. PR cannot be merged."
+            exit 1
+          fi
